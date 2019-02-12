@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btnServises"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:onClick="GotoServiseActivity"
+                android:text="Add Servise"
+                tools:layout_editor_absoluteX="34dp" />
+
+            <ListView
+                android:id="@+id/_list"
+                android:layout_width="match_parent"
+                android:layout_height="387dp">
+
+
+            </ListView>
+            <Button
+                android:id="@+id/btnDeleteAll"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="#c91919"
+                android:textColor="@android:color/white"
+                android:onClick="GotoServiseActivity"
+                android:text="Delete All Servise"
+                tools:layout_editor_absoluteX="34dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

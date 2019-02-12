@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ivo.autowashsytem">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="16" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddTypeOfCarActivity" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="Search" />
+        <activity
+            android:name=".ReportCarsActivity"
+            android:label="Day report" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="Contacts" />
+        <activity
+            android:name=".AddFormActivity"
+            android:label="Add new car" />
+        <activity
+            android:name=".ServiseActivity"
+            android:label="Add servise" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity android:name=".EditServiseActivity"
+            android:label="Etir Servise"></activity>
+    </application>
+
+</manifest>

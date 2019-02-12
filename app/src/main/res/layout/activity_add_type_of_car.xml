@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="21dp"
+        android:textSize="24sp"
+        tools:text="Please select type of car" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSedan"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="94dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/sedan" />
+
+    <ImageButton
+        android:id="@+id/imageButtonVan"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonSedan"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageButtonJeep"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/jeep" />
+
+    <ImageButton
+        android:id="@+id/imageButtonJeep"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonSedan"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageButtonSedan"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/van" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBus"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonSedan"
+        android:layout_marginStart="-361dp"
+        android:layout_marginTop="121dp"
+        android:layout_toEndOf="@+id/imageButtonVan"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/bus" />
+
+
+</RelativeLayout>

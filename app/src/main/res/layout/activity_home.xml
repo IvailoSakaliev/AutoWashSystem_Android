@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonADD"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="120dp"
+        android:background="@android:color/transparent"
+        android:onClick="GoTOTypeActivity"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/add" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMoney"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonReport"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-361dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="140dp"
+        android:layout_toEndOf="@+id/imageButtonReport"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/money" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonSearch"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginBottom="145dp"
+        android:layout_toEndOf="@+id/imageButtonMoney"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:onClick="GotoSettingsActivity"
+        android:scaleType="fitStart"
+        android:src="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/imageButtonContacts"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonADD"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="148dp"
+        android:layout_toEndOf="@+id/imageButtonSettings"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:onClick="GotoContactActivity"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/contacts" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonADD"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imageButtonADD"
+        android:background="@android:color/transparent"
+        android:onClick="GoToSearchActivity"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/imageButtonReport"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignTop="@+id/imageButtonSearch"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/imageButtonSearch"
+        android:background="@android:color/transparent"
+        android:onClick="GoToReportActivity"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/report" />
+
+
+    </RelativeLayout>
